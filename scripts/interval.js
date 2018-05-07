@@ -43,7 +43,7 @@ var IntervalSliderModule = (function() {
         that._input.name = that._input.id;
         that._input.type = "range";
         that._input.min = "-143";
-        that._input.max = "243";
+        that._input.max = "100";
         that._input.onchange = onChange;
         that._input.oninput = onInput;
 

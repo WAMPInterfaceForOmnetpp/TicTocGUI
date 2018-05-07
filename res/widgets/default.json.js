@@ -1,6 +1,6 @@
 var widget_positions_default =
     {
-        "reset_container": {
+        "end_container": {
             "x": 300,
             "y": 570,
             "w": null,

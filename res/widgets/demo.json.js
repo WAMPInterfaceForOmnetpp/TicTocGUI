@@ -1,6 +1,6 @@
 var widget_positions_demo =
     {
-        "reset_container": {
+        "end_container": {
             "x": 407,
             "y": 810,
             "w": null,

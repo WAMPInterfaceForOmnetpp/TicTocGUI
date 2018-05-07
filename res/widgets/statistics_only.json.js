@@ -1,6 +1,6 @@
 var widget_positions_statistics_only =
     {
-        "reset_container": {
+        "end_container": {
             "x": 290,
             "y": 570,
             "w": null,

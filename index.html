@@ -18,7 +18,7 @@
     <script src="res/widgets/statistics_only.json.js"></script>
     <script src="scripts/widget.js"></script>
     <script src="scripts/traffic.js"></script>
-    <script src="scripts/reset.js"></script>
+    <script src="scripts/end.js"></script>
     <script src="scripts/interval.js"></script>
     <script src="scripts/simulation_manager.js"></script>
 
@@ -44,7 +44,7 @@
         </div>
         <div id="dsme_traffic_chart_container" class="draggable ui-widget-content">
             <div class="handle">
-                <h2>No. of tics over Time</h2>
+                <h2>Total Number of Tics</h2>
             </div>
         </div>
         <div id="widget_container" class="draggable ui-widget-content">
@@ -52,24 +52,23 @@
 				<h2>Widget Management</h2>
 			</div>
         </div>
-        <div id="reset_container" class="draggable ui-widget-content">
+        <div id="end_container" class="draggable ui-widget-content">
             <div class = "handle">
-                <h2> Restart </h2>
+                <h2> End </h2>
             </div>
         </div>
     </div>
 
     <script>
         /***** SINGLETONS *****/
-		widget_module.init("widget_container", {locked: true});
-		//widget_module.loadView(widget_positions_default);
+	widget_module.init("widget_container", {locked: true});
         widget_module.loadView(widget_positions_default);
         
         var wsuri = "ws://127.0.0.1:9000/ws";
 
         var interval_slider = new IntervalSliderModule("interval_container", wsuri);
         var dsme_traffic = new TrafficModule("dsme_traffic_chart_container", wsuri);
-        var reset_button = new ResetButtonModule("reset_container",  wsuri);
+        var end_button = new EndButtonModule("end_container",  wsuri);
     </script>
 </body>
 
